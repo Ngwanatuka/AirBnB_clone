@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """class User inheriting from BaseModel"""
 
 from models.base_model import BaseModel

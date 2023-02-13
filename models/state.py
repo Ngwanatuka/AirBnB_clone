@@ -1,4 +1,4 @@
-#!/usr/bin/env Python3
+#!/usr/bin/Python3
 """class State Inheriting from BaseModel
 """
 
