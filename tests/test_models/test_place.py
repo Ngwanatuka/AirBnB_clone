@@ -23,7 +23,6 @@ class TestPlace(unittest.TestCase):
         """
         del self.place
 
-
     def test_inheritenace(self):
         """Tests that the Place inherits from the BaseModel
         """
@@ -46,4 +45,3 @@ class TestPlace(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-

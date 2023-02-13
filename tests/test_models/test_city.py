@@ -6,6 +6,7 @@ import unittest
 from models.base_model import BaseModel
 from models.city import City
 
+
 class TestCity(unittest.TestCase):
     """TestCity class tests the functionality of the City model
     """
