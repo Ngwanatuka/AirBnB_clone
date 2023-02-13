@@ -71,13 +71,15 @@ class TestBaseModel(unittest.TestCase):
         self.assertEqual(str(self.bm), expected)
 
     def test_save(self):
-        """testing if save method updates the attributes
+        """tests if the updated_at attribute is updated
         """
 
         self.bm.save()
+        updated_at = self.bm.updated_at
         now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         self.assertEqual(now, self.bm.updated_at.strftime("%Y-%m-%d %H:%M:%S"))
         self.assertIsInstance(self.bm.updated_at, datetime)
+        self.assertNotEqual(updated_at, self.bm.updated_at)
 
     def test_to_dict_format(self):
         """checking the return of to_dict method
