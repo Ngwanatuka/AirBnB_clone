@@ -6,6 +6,7 @@ import uuid
 from datetime import datetime, time, date
 from models import storage
 
+
 class BaseModel:
     """a class that defines attributes id,
     created_at, updated_at and methods
@@ -45,6 +46,7 @@ class BaseModel:
     def to_dict(self):
         """returns a dictionary repr of the instance
         """
+
         my_dict = self.__dict__.copy()
         my_dict.update({
             "__class__": self.__class__.__name__,
