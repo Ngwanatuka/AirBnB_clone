@@ -83,5 +83,5 @@
 }
 
 .amenities:hover .popover {
-  display: clock;
+  display: block;
 }
